@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     func getWeather() -> String {
         var weather = ""
-        Alamofire.request("https://api.openweathermap.org/data/2.5/weather?APPID=a3318e2703222b96985b824503780a40&q=Osaka").responseJSON { (response) in
+        Alamofire.request("https://api.openweathermap.org/data/2.5/weather?APPID=a3318e2703222b96985b824503780a40&q=NewYork").responseJSON { (response) in
             let data = JSON(response.result.value!)
             weather = data["weather"][0]["main"].string!
             print(weather)

@@ -12,7 +12,7 @@
 		A3D4972A8490F7E99633F9E7 /* Pods_weatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C4B66A89999B2B62986953 /* Pods_weatherTests.framework */; };
 		AA071D191FAEA7B50093C360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA071D181FAEA7B50093C360 /* AppDelegate.swift */; };
 		AA071D1B1FAEA7B50093C360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA071D1A1FAEA7B50093C360 /* ViewController.swift */; };
-		AA071D1E1FAEA7B50093C360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA071D1C1FAEA7B50093C360 /* Main.storyboard */; };
+		AA071D1E1FAEA7B50093C360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA071D1C1FAEA7B50093C360 /* Main.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
 		AA071D201FAEA7B50093C360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA071D1F1FAEA7B50093C360 /* Assets.xcassets */; };
 		AA071D231FAEA7B50093C360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA071D211FAEA7B50093C360 /* LaunchScreen.storyboard */; };
 		AA071D2E1FAEA7B50093C360 /* weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA071D2D1FAEA7B50093C360 /* weatherTests.swift */; };
@@ -25,6 +25,7 @@
 		AA071D641FAEB12D0093C360 /* cloud-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA071D611FAEB12D0093C360 /* cloud-background.jpg */; };
 		AA071D651FAEB12D0093C360 /* rain-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA071D621FAEB12D0093C360 /* rain-background.jpg */; };
 		AA90058F1FAEDF4C0002E153 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = AA90058E1FAEDF4C0002E153 /* reload.png */; };
+		AA9005931FAEE6DF0002E153 /* FiveDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9005921FAEE6DF0002E153 /* FiveDaysViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		AA071D611FAEB12D0093C360 /* cloud-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "cloud-background.jpg"; path = "weather.xcodeproj/cloud-background.jpg"; sourceTree = SOURCE_ROOT; };
 		AA071D621FAEB12D0093C360 /* rain-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "rain-background.jpg"; path = "weather.xcodeproj/rain-background.jpg"; sourceTree = SOURCE_ROOT; };
 		AA90058E1FAEDF4C0002E153 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reload.png; path = ../reload.png; sourceTree = "<group>"; };
+		AA9005921FAEE6DF0002E153 /* FiveDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FiveDaysViewController.swift; path = "/Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tech/weather/weather/FiveDaysViewController.swift"; sourceTree = "<absolute>"; };
 		B33E3DCF975FC6F6CC3F729B /* Pods_weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7265C6E98A7ED24F515D0E2 /* Pods-weatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-weatherUITests/Pods-weatherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F9C4B66A89999B2B62986953 /* Pods_weatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 		AA071D171FAEA7B50093C360 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				AA9005921FAEE6DF0002E153 /* FiveDaysViewController.swift */,
 				AA071D4D1FAEABCF0093C360 /* img */,
 				AA071D181FAEA7B50093C360 /* AppDelegate.swift */,
 				AA071D1A1FAEA7B50093C360 /* ViewController.swift */,
@@ -269,6 +272,9 @@
 		AA071D0D1FAEA7B50093C360 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+				);
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = glacier;
@@ -503,6 +509,7 @@
 			files = (
 				AA071D1B1FAEA7B50093C360 /* ViewController.swift in Sources */,
 				AA071D191FAEA7B50093C360 /* AppDelegate.swift in Sources */,
+				AA9005931FAEE6DF0002E153 /* FiveDaysViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
