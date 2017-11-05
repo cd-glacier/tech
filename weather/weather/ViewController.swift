@@ -13,12 +13,13 @@ import SwiftyJSON
 class ViewController: UIViewController {
     @IBOutlet weak var weatherImg: UIImageView!
     @IBOutlet weak var backgroundImg: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
     
     override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
         let weather = getWeather()
-        print(weather)
+        dateLabel.text = getToday(format:"yyyy/MM/dd")
 	}
     
     func getWeather() -> String {
@@ -47,6 +48,13 @@ class ViewController: UIViewController {
             weatherImg.image = UIImage(named: "sun.png")
             backgroundImg.image = UIImage(named: "sun-background.jpg")
         }
+    }
+    
+    func getToday(format:String = "yyyy/MM/dd HH:mm:ss") -> String {
+        let now = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: now as Date)
     }
     
     @IBAction func pushReloadBtn(_ sender: Any) {
